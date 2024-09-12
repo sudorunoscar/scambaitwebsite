@@ -33,7 +33,7 @@
         //phone number
         let phoneNumber = localStorage.getItem("scam_phonenumber");
         if (!phoneNumber)
-            phoneNumber = "+1-888-123-SCAM";
+            phoneNumber = "+1 (971) 449-2753";
         Object.values($(".phonenumber")).forEach(el => el.outerHTML = phoneNumber);
 
         //IP
@@ -44,7 +44,7 @@
                 or at least a random IP to make it believable: https://onlinerandomtools.com/generate-random-ip
                 Don't consider adding your public IP as that could just make you vulnerable.
             */
-            ip = "8.8.8.8";
+            ip = "83.62.78.71";
         $("#ipaddress")[0].outerHTML = ip;
 
         $("#randomchars")[0].outerHTML = Math.random().toString(36).substr(2, 12).toUpperCase(); //attach a unique-looking identifier string to the virus
